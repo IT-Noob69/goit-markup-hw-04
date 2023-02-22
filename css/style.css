@@ -239,6 +239,14 @@ img {
   margin-right: 24px;
 }
 
+.features .icon-box{
+  margin-bottom: 8px;
+  width: 264px;
+  height: 112px;
+  background: var(--cloud-color);
+  border-radius: 4px;
+}
+
 .activity {
   display: block;
   padding-top: 0;
