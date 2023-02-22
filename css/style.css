@@ -166,6 +166,23 @@ img {
   padding-bottom: 120px;
 }
 
+.social-icons {
+  display: flex;
+}
+
+
+.icon-box{
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
 .hero {
   padding: 188px 0;
   text-align: center;
@@ -280,12 +297,30 @@ img {
   margin: 0 auto;
 }
 
-.customers{
+.team .icon-box{
+  background-color: var(--iris-color);
+}
+
+.team .icon-box:hover{
+  background-color: var(--ocean-color);
+}
+
+.team .social-icons{
+  margin-top: 8px;
+  justify-content: center;  
+}
+
+.team .social-icons > *:not(:last-child) {
+  margin-right: 24px;
+}
+
+
+.customers {
   margin-top: 130px;
   margin-bottom: 120px;
 }
 
-.customers-title{
+.customers-title {
   margin-bottom: 72px;
 
   font-size: 36px;
@@ -295,15 +330,15 @@ img {
   text-transform: capitalize;
   color: var(--navyblue-color);
 }
-.customers-list{
-display: flex;
-justify-content: center;
+.customers-list {
+  display: flex;
+  justify-content: center;
 }
 
-.customers-list>*:not(:last-child){
+.customers-list > *:not(:last-child) {
   margin-right: 24px;
 }
-.customers-logo{
+.customers-logo {
   width: 168px;
   height: 88px;
   border: 1px solid var(--slate-color);
@@ -313,7 +348,6 @@ justify-content: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
 }
 
 .footer {
@@ -327,7 +361,7 @@ justify-content: center;
   letter-spacing: 0.02em;
 }
 
-.footer-company{
+.footer-company {
   margin-left: 156px;
   margin-right: 120px;
 }
@@ -354,8 +388,6 @@ justify-content: center;
  
 } */
 
-
-
 .footer-title {
   margin-bottom: 16px;
   color: var(--white-color);
@@ -363,29 +395,17 @@ justify-content: center;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.social-icons {
-  display: flex;
-}
 
-.social-icons > *:not(:last-child) {
+.footer .social-icons > *:not(:last-child) {
   margin-right: 16px;
 }
 
-.icon-box {
-  padding: 0;
-  border: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+.footer .icon-box {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.icon-box.icon-box:hover{
-  background: #31D0AA;
+.footer .icon-box:hover {
+  background: #31d0aa;
 }
 
 /* portfolio */
