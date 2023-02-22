@@ -6,6 +6,7 @@
   --iris-color: #4d5ae5;
   --cloud-color: #f4f4fd;
   --cornflower-color: #e7e9fc;
+  --light-slate-color: #8E8F99;
 }
 
 body {
@@ -348,15 +349,17 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: var(--light-slate-color);
 }
 
 .customers-logo:hover{
-  border: 1px solid var(--ocean-color);  
+  color: var(--ocean-color);
+  border: 1px solid currentColor;  
 }
 
 .customer-icon{
   display: block;
-  fill: #8E8F99;
+  fill: currentColor;
 }
 
 .customer-icon:hover{
