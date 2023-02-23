@@ -197,7 +197,8 @@ img {
   background-image: linear-gradient(
       to right,
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
+      rgba(46, 47, 66, 0.7)
+    ),
     url(../images/people-office.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -245,11 +246,11 @@ img {
   display: flex;
 }
 
-.features-list > * {
+.features-list > li {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
-.features-list > *:not(:last-child) {
+.features-list > li:not(:last-child) {
   margin-right: 24px;
 }
 
@@ -342,8 +343,8 @@ img {
   margin-bottom: 120px;
 }
 
-.customers  a{
-text-decoration-skip-ink: none;
+.customers a {
+  text-decoration-skip-ink: none;
 }
 
 .customers-title {
@@ -469,12 +470,13 @@ text-decoration-skip-ink: none;
   flex-wrap: wrap;
 }
 
-.filter-cards > * {
-  flex-basis: calc((100% - 2 * 24px) / 3);
+.filter-cards a {
+  text-decoration: none;
+  cursor: default;
 }
 
-.filter-card{
-  cursor: pointer;
+.filter-card {
+  flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
 .filter-card:not(:nth-child(3n)) {
@@ -485,10 +487,10 @@ text-decoration-skip-ink: none;
   margin-bottom: 48px;
 }
 
-.filter-card:hover{
-border: 1px solid var(--cloud-color);
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-
+.filter-card:hover {
+  border: 1px solid var(--cloud-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .button {
@@ -523,5 +525,3 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
 }
-
-
