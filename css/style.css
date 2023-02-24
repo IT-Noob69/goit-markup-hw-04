@@ -363,7 +363,7 @@ img {
   justify-content: center;
 }
 
-.customers-list > *:not(:last-child) {
+.customers-list > li:not(:last-child) {
   margin-right: 24px;
 }
 .customers-logo {
@@ -379,7 +379,8 @@ img {
   color: var(--light-slate-color);
 }
 
-.customers-logo:hover {
+.customers-logo:hover,
+.customers-logo:focus {
   color: var(--ocean-color);
   border: 1px solid currentColor;
 }
